@@ -132,6 +132,12 @@
                 status: $('#taskStatus').val()
             };
 
+            // Check if the name and description fields are empty
+            if (!taskData.name || !taskData.description) {
+                alert('Task name and description cannot be empty.');
+                return;
+            }
+
             $.ajax({
                 url: `/api/projects/${projectId}/tasks`,
                 type: 'POST',

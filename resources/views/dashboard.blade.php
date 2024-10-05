@@ -118,6 +118,12 @@
                 description: $('#projectDescription').val(),
             };
 
+            // Check if the name and description fields are empty
+            if (!projectData.name || !projectData.description) {
+                alert('Project name and description cannot be empty.');
+                return;
+            }
+
             $.ajax({
                 url: `/api/projects`,
                 type: 'POST',
