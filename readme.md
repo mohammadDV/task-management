@@ -1,4 +1,4 @@
-# Task Management project
+# Project Management Tool Development
 
 This project is a **test project** that includes two complete **CRUD implementations** for **Projects and Tasks** associated with the projects. The backend is built using **Laravel 11**, and the frontend is developed with **HTML**, **CSS(Tailwind css)**, and **JavaScript (jQuery)**.
 
