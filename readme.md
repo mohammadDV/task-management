@@ -1,6 +1,4 @@
-# Task Manager project
-
-[![Build Status]
+# Task Management project
 
 This project is a **test project** that includes two complete **CRUD implementations** for **Projects and Tasks** associated with the projects. The backend is built using **Laravel 11**, and the frontend is developed with **HTML**, **CSS(Tailwind css)**, and **JavaScript (jQuery)**.
 
@@ -42,12 +40,12 @@ This command will execute the test cases for various CRUD operations and confirm
 
 - Clone the repository:
 ```bash
- git clone https://github.com/mohammaddv/task-manager
+ git clone https://github.com/mohammaddv/task-management
 ```
 
 - Navigate to the project directory:
 ```php
- cd task-manager
+ cd task-management
 ```
 
 - Install dependencies:
