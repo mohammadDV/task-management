@@ -35,6 +35,7 @@ A **complete test suite** for the **TaskRepository** has been implemented to val
 ```
 
 This command will execute the test cases for various CRUD operations and confirm that the repository behaves as expected.
+Note: Keep in mind that running php artisan test **will reset the main database**. Make sure to back up any important data before executing the tests.
 
 ## Getting Started
 
@@ -53,20 +54,34 @@ This command will execute the test cases for various CRUD operations and confirm
  composer install
 ```
 
+- Set up environment variables by copying .env.example and set up your database information:
+```php
+ cp .env.example .env
+```
+
+- Generate the application key:
+```php
+ php artisan key:generate
+```
+
 - Run database migrations:
 ```php
  php artisan migrate
-```
-
-- Start the local server:
-```php
- php artisan serve
 ```
 
 - Add the admin user
 ```php
  php artisan app:add-admin-user
 ```
+Email: admin@gmail.com
+Password: admin123
+
+- Start the local server:
+```php
+ php artisan serve
+```
+
+
 
 ## Contributing
 Feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvement.
